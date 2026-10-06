@@ -18,6 +18,7 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-server-dom-webpack": "19.3.0",
     "vinext": "latest"
   },
   "devDependencies": {
