@@ -2,7 +2,34 @@
   "name": "ai-sms-platform",
   "version": "0.1.0",
   "private": true,
-  "scripts": {"dev":"next dev","build":"next build","start":"next start","lint":"next lint"},
-  "dependencies": {"next":"latest","react":"latest","react-dom":"latest"},
-  "devDependencies": {"@types/node":"latest","@types/react":"latest","@types/react-dom":"latest","typescript":"latest","eslint":"latest","eslint-config-next":"latest"}
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "dev:vinext": "vite dev --port 3001",
+    "build:vinext": "vite build",
+    "start:vinext": "vite preview",
+    "deploy": "vinext-cloudflare deploy"
+  },
+  "dependencies": {
+    "@vinext/cloudflare": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vinext": "latest"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vitejs/plugin-rsc": "latest",
+    "cf": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest",
+    "vite": "latest"
+  }
 }
